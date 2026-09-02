@@ -1,0 +1,137 @@
+:root {
+  --hover-color: rgb(130, 130, 152);
+  --header-bg:black;
+  --hero-title:white;
+  --title-tag:#1e90ff;
+  --container-bg:rgba(0, 0, 0, 0.8);
+  --contest-a:#1e90ff;
+  --calender-bg:rgb(148, 177, 227);
+  --calender-color:white;
+}
+
+[data-theme="light"]{
+  --header-bg:#5babfc;
+  --hero-title:black;
+  --title-tag:#ffffff;
+  --container-bg:white;
+  --contest-a:rgb(22, 77, 187);
+  --calender-bg:  rgb(193, 219, 246) ;
+  --calender-color:black;
+}
+
+html, body {
+  color: var(--secondary-color);
+}
+
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+  background: var(--header-bg);
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: var(--hero-title);
+}
+
+.hero-tagline {
+  font-size: 1.25rem;
+  color: var(--title-tag);
+}
+
+.contests-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.subheading{
+  color: var(--hero-title);
+  margin-bottom: 15px;
+}
+.calendar-container, .recent-contests {
+  background-color: var(--container-bg);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px var(--container-bg);
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contests-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contest-item {
+  margin-bottom: 1rem;
+}
+
+.contest-item a {
+  color: var(--contest-a);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contest-item a:hover {
+  color: var(--hover-color);
+  text-decoration: underline;
+}
+
+.calender {
+  background-color: var(--calender-bg);
+  color: var(--calender-color);
+  border-radius: 10px;
+}
+.contest-dot {
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.selected-date-contests {
+ 
+  padding: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+
+
+.selected-date-contests h3 {
+  margin-bottom: 1rem;
+}
+
+.selected-date-contests ul {
+  list-style: none;
+  padding: 0;
+}
+
+.selected-date-contests li {
+  margin-bottom: 0.5rem;
+}
+
+.selected-date-contests a {
+  color: var(--hero-title);
+  text-decoration: none;
+}
+
+.selected-date-contests a:hover {
+  text-decoration: underline;
+}
+

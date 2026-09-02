@@ -1,0 +1,143 @@
+:root{
+  --filter-tag:black;
+  --filter-border:white;
+  --filter-text:white;
+  --filter-checked:#007bff;
+  --filter-hover:rgb(73, 73, 161);
+  --ques-item:white;
+}
+
+[data-theme="light"]{
+  --filter-tag:white;
+  --filter-border:black;
+  --filter-text:black;
+  --filter-hover:rgb(95, 162, 244);
+  --ques-item:black; 
+}
+
+.tag-filters {
+  margin: 0 50px;
+  margin-bottom: 20px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  display: flex;
+  justify-content: center;
+}
+
+.tag-filters label {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  /* margin-bottom: 10px; */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+.tag-filters label span:hover{
+  background-color: var(--filter-hover);
+}
+.tag-filters input[type="checkbox"] {
+  display: none;
+}
+
+.tag-filters input[type="checkbox"]:checked + span {
+  background-color: var(--filter-checked);
+  color: white;
+  border-color: var(--filter-checked);
+}
+
+.tag-filters label span {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid var(--filter-border);
+  border-radius: 5px;
+  background-color: var(--filter-tag);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* .tag-filters input[type="checkbox"]:checked + span {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+} */
+
+
+
+.questions-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  
+  min-height: 100vh;
+}
+
+.question-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding:10px 0 0 50px;
+  border-bottom: 1px solid var(--ques-item);
+}
+
+.question-item a {
+  width: 55vw;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: var(--ques-item);
+}
+
+
+
+
+ .tags  {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 10px;
+  justify-content: space-between;
+}
+
+
+.tag {
+  background-color: #007bff;
+  color: #fff;
+  padding: 4px 8px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination button.active {
+  background-color: #0056b3;
+}

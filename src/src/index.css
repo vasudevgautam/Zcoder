@@ -1,0 +1,67 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+html,body,#root{
+  background:linear-gradient(#000,rgb(17, 0, 255),#000); 
+  height: 100%;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+} */
+/* :root{
+  --bc-color:rgb(95, 171, 247);
+  --lb-color:rgb(45, 90, 139);
+  --bg-color : rgb(17, 0, 255);
+  --wt-color:white;
+  --bk-color:black;
+  --gc-color: rgb(130, 130, 152); 
+  --background-color:linear-gradient(#000,rgb(17, 0, 255),#000);
+  --toggle-bg:rgb(130, 130, 152); 
+  --toggle-fg: rgb(45, 90, 139);
+} */
+/* rgb(68, 180, 245) */
+
+/* [data-theme="light"] {
+  --bc-color:rgb(95, 171, 247);
+  --lb-color:rgb(0, 0, 0);
+  --bg-color :rgb(255, 255, 255);
+  --wt-color:black;
+  --bk-color:rgb(95, 171, 247);
+  --gc-color: rgb(130, 130, 152); 
+  --background-color:linear-gradient(rgb(95, 171, 247),rgb(226, 225, 233),rgb(95, 171, 247));
+  --toggle-bg:#f0eb9d;
+  --toggle-fg:#ffd000;
+} */
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+/* *::-webkit-scrollbar {
+  display: none;  
+} */
+
+a {
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+pre{
+  padding: 0;
+}

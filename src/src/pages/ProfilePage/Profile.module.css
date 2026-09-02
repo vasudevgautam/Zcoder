@@ -1,0 +1,170 @@
+:root{
+  --txt-color:#333;
+  --input-boxColor:white;
+  --button-color:#007bff;
+  --button-txt: white;
+  --button-hovr:#007bff;
+}
+
+[data-theme="dark"]{
+  --txt-color:white;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.Appp {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  gap: 100px;
+}
+
+.title{
+  vertical-align: middle;
+  padding: 10px 200px;
+  border-bottom: 1px solid var(--txt-color);
+  color: var(--txt-color);
+}
+
+.profile{
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.userInfo{
+  display: flex;
+  gap: 10px;
+  font-size: larger;
+}
+.techStacks, .languages{
+  margin-top: 10px;
+  max-height: 150px;
+  overflow: auto;
+}
+
+.languages::-webkit-scrollbar {
+  display: none;  
+}
+
+.techStacks::-webkit-scrollbar {
+  display: none;  
+}
+.techStack,.languageItem,.friendsItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--input-boxColor);
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+.user-info {
+  margin: 20px 0;
+}
+
+.user-info p {
+  margin: 5px 0;
+  color: var(--txt-color);
+}
+
+.friends{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.p{
+  white-space: nowrap;
+}
+.searchUser{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+
+.searchButton{
+  margin-left: 25px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  color: var(--button-txt);
+  cursor: pointer;
+}
+
+.userDisplay{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.friendsContainer{
+  display: flex;
+  flex-direction: column;
+  
+}
+.friendsList{
+  overflow: auto;
+  max-height: 400px;
+
+}
+
+
+
+.pbutton {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--button-color);
+  color: var(--button-txt);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.pbutton:hover {
+  background-color: var(--button-hovr);
+}
+
+.pinput[type="text"] {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ph2 {
+  margin: 15px 0;
+  color: var(--txt-color);
+  white-space: nowrap;
+}
+
+
+.ratings{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.input{
+  display: flex;
+  gap: 10px;
+}

@@ -1,0 +1,75 @@
+:root{
+  --practice-background:black;
+  --ques-text:white;
+}
+
+[data-theme="light"]{
+  --practice-background:linear-gradient(#5ab8ee,rgb(255, 255, 255),#5ab8ee);
+  --ques-text:black;
+}
+.problemStatementContainer {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  height: 100vh;
+  background-color:var(--practice-background);
+}
+.title{
+  color: var(--ques-text);
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.problemStatement {
+  color:var(--ques-text);
+  padding: 20px;
+  border-radius: 5px;
+  border-right:1px solid var(--ques-text);
+  width: 800px;
+  overflow: auto; /* Allow vertical scrolling if content exceeds the container */
+}
+.problemStatement::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar for webkit browsers */
+}
+
+.questionStatement pre,p{
+  color: var(--ques-text);
+}
+
+
+.solution-container{
+  max-width: 650px;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  overflow: auto;
+}
+
+.submissions{
+  font-size: 25px;
+}
+.solution-item{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.solution-header{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.solution{
+  margin-top: 10px;
+  overflow: auto;
+  max-height: 300px;
+}
+
+.solution-container::-webkit-scrollbar {
+  display: none;  /* Hide scrollbar for webkit browsers */
+}
+.time{
+  padding-right: 30px;
+}

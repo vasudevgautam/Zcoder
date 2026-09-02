@@ -1,0 +1,236 @@
+/* :root{
+  --bg-color:rgb(17, 0, 255);
+  --wt-color:white;
+}
+
+.sectionForm {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+ .wrapper{
+  padding: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--wt-color);
+  gap: 20px;
+  background-color: rgb(0, 0, 0);;
+  border-radius: 10px;
+	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+
+ .wrapper h1{
+  font-size: 25px;
+  text-align: center;
+}
+
+ .wrapper .inputBox{
+  position: relative;
+  width: 100%;
+  
+  height:40px;
+  margin: 20px 0 ;
+}
+
+ .inputBox input{
+  
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0.5px solid gray;
+  border-radius: 40px;
+  color: var(--wt-color);
+  padding: 20px 45px 20px 20px;
+  outline: none;
+}
+
+.inputBox input:focus{
+  border-color:rgb(22, 20, 20);
+  box-shadow: 0 0 10px var(--bg-color);
+}
+.inputbox input::placeholder{
+  color: var(--wt-color);
+}
+.inputBox .icon{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+form .loginButton{
+  width: 100%;
+  height: 35px;
+  background: var(--wt-color);
+  border: none;
+  border-radius:40px ;
+  cursor: pointer;
+  color: black;
+  font-size: 15px;
+}
+form .loginButton:hover{
+  background-color: rgb(130, 130, 152);
+  transition: 0.5s;
+  color: white; 
+}
+
+form .registerLink{
+  text-align: center;
+  margin-top: 20px;
+}
+.registerLink p,a {
+  font-size: 15px;
+  color: var(--wt-color);
+  text-decoration: none;
+}
+.registerLink a:hover{
+  text-decoration: underline;
+  color: rgb(255, 68, 0);
+}
+
+@media (max-width:500px){
+  .wrapper{
+    padding: 20px;
+  }
+  form{
+    width: auto;
+  }
+} */
+
+
+
+
+
+
+:root{
+  --wrapper-text:white;
+  --wrapper-background:black;
+  --inputBox-icon-color:white;
+  --inputBox-focus:rgb(17, 0, 255);
+  --login-background:white;
+  --login-text:black;
+  --login-hover-text:white;
+  --login-hover:rgb(130, 130, 152);
+  --register--pa:white;
+}
+
+[data-theme="light"]{
+  --wrapper-text:black;
+  --wrapper-background:white;
+  --inputBox-icon-color:black;
+  --inputBox-focus:black;
+  --login-background:black;
+  --login-text:white;
+  --register--pa:black;
+}
+
+
+.sectionForm {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+	justify-content: center;
+	align-items: center;
+}
+
+ .wrapper{
+  padding: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--wrapper-text);
+  gap: 20px;
+  background-color: var(--wrapper-background);
+  border-radius: 10px;
+	box-shadow: 0 15px 35px rgba(0,0,0,9);
+}
+
+
+ .wrapper h1{
+  font-size: 25px;
+  text-align: center;
+}
+
+ .wrapper .inputBox{
+  position: relative;
+  width: 100%;
+  
+  height:40px;
+  margin: 20px 0 ;
+}
+
+ .inputBox input{
+  
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0.5px solid gray;
+  border-radius: 40px;
+  color: var(--inputBox-icon-color);
+  padding: 20px 45px 20px 20px;
+  outline: none;
+}
+
+.inputBox input:focus{
+  border-color:rgb(22, 20, 20);
+  box-shadow: 0 0 10px var(--inputBox-focus);
+}
+.inputbox input::placeholder{
+  color: var(--wt-color);
+}
+.inputBox .icon{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+}
+
+form .loginButton{
+  width: 100%;
+  height: 35px;
+  background: var(--login-background);
+  border: none;
+  border-radius:40px ;
+  cursor: pointer;
+  color: var(--login-text);
+  font-size: 15px;
+}
+form .loginButton:hover{
+  background-color: var(--login-hover);
+  transition: 0.5s;
+  color: var(--login-hover-text); 
+}
+
+form .registerLink{
+  text-align: center;
+  margin-top: 20px;
+}
+.registerLink p,a {
+  font-size: 15px;
+  color: var(--register--pa);
+  text-decoration: none;
+}
+.registerLink a:hover{
+  text-decoration: underline;
+  color: rgb(255, 68, 0);
+}
+
+@media (max-width:400px){
+  .login-container{
+    width:auto;
+  }
+  form{
+    width: auto;
+  }
+}
+
