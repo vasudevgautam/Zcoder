@@ -14,7 +14,9 @@ app.use(bodyParser());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
-connectToMongoDb('').then(()=>{
+require("dotenv").config();
+
+mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log('mongo connecrted')
 })
 
