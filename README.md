@@ -34,55 +34,43 @@ ZCoder/
 ├── .gitignore
 ├── package.json
 └── README.md
-Getting Started
-Prerequisites
+```
+## Getting Started
+-**Prerequisites**
 
 Make sure you have the following installed:
 
-Node.js
-npm
-MongoDB
-Clone the Repository
-git clone https://github.com/vasudevgautam/Zcoder.git
-cd Zcoder
-nstallation and Setup
-1. Frontend Setup
+-**Node.js**
+-**npm**
+-**MongoDB**
+## Clone the Repository
+-**git clone https://github.com/vasudevgautam/Zcoder.git
+cd Zcoder**
+## Installation and Setup
+## 1. Frontend Setup
 
 Open the integrated terminal in the frontend directory:
 
-npm install
-npm run dev
-2. Backend Setup
+-**npm install**
+-**npm run dev**
+## 2. Backend Setup
 
 Open another integrated terminal and navigate to the backend directory:
 
-cd backend/Backend
-npm install
-npm start
-Environment Variables
+-**cd backend/Backend**
+-**npm install**
+-**npm start**
+## Environment Variables
 
-The backend uses environment variables to store database configuration.
+-**The backend uses environment variables to store database configuration.**
 
-Create a .env file in the backend directory:
+-**Create a .env file in the backend directory:**
 
-MONGO_URI=your_mongodb_connection_string
+-**MONGO_URI=your_mongodb_connection_string**
 
-Do not commit the .env file to GitHub.
+-**Do not commit the .env file to GitHub.**
 
-Make sure .env is included in .gitignore.
+-**Make sure .env is included in .gitignore.**
 
-How It Works
-Create an account or log in to the platform.
-Browse available coding problems.
-Select a programming language.
-Work on coding solutions.
-Submit and share solutions with the community.
-View solutions submitted by other users.
-Bookmark useful solutions for later.
-Comment on solutions and participate in discussions.
-Future Improvements
-Online code execution and testing
-Support for additional programming languages
-Advanced problem filtering
-User profiles and progress tracking
-Competitive programming contests
+
+
