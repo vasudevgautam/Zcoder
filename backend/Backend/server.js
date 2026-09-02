@@ -14,7 +14,7 @@ app.use(bodyParser());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
 
-connectToMongoDb('mongodb+srv://jajamabhijith2004:Devabhi2004@users.ralw0gb.mongodb.net/backend').then(()=>{
+connectToMongoDb('').then(()=>{
     console.log('mongo connecrted')
 })
 
