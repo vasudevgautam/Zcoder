@@ -5,31 +5,84 @@ ZCoder is a dynamic coding platform designed to help developers practice coding 
 ## Features
 
 - **Problem Statements**: Browse and solve a variety of coding problems.
-- **Language Support**: Supports JavaScript, Python, Java, and C++.
-- **User Solutions**: Submit and view solutions from other users.
-- **Bookmarks**: Bookmark solutions for quick access.
+- **Multi-Language Support**: Supports JavaScript, Python, Java, and C++.
+- **User Solutions**: Submit and view solutions shared by other users.
+- **Bookmarks**: Bookmark useful solutions for quick access.
 - **Comments**: Engage with the community by commenting on solutions.
-- **User Authentication**: Secure user login and registration.
+- **User Authentication**: Secure user registration and login using JWT.
 
 ## Tech Stack
 
 - **Frontend**: React, Vite, CSS Modules
-- **Backend**: Node.js, Express
+- **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Authentication**: JWT
+- **Authentication**: JSON Web Token (JWT)
 
-## Getting Started
+## Project Structure
 
-### Prerequisites
+```text
+ZCoder/
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── ...
+├── backend/
+│   ├── Backend/
+│   │   ├── server.js
+│   │   └── ...
+│   └── ...
+├── .gitignore
+├── package.json
+└── README.md
+Getting Started
+Prerequisites
 
-- Node.js
-- npm
+Make sure you have the following installed:
 
-### How to Run
-- *Open Integrated Terminal of Zcoder*
-- npm install
-- npm run dev
-- *Open Integrated Terminal of Backend(cd Backend)*
-- npm i
-- npm start
+Node.js
+npm
+MongoDB
+Clone the Repository
+git clone https://github.com/vasudevgautam/Zcoder.git
+cd Zcoder
+nstallation and Setup
+1. Frontend Setup
 
+Open the integrated terminal in the frontend directory:
+
+npm install
+npm run dev
+2. Backend Setup
+
+Open another integrated terminal and navigate to the backend directory:
+
+cd backend/Backend
+npm install
+npm start
+Environment Variables
+
+The backend uses environment variables to store database configuration.
+
+Create a .env file in the backend directory:
+
+MONGO_URI=your_mongodb_connection_string
+
+Do not commit the .env file to GitHub.
+
+Make sure .env is included in .gitignore.
+
+How It Works
+Create an account or log in to the platform.
+Browse available coding problems.
+Select a programming language.
+Work on coding solutions.
+Submit and share solutions with the community.
+View solutions submitted by other users.
+Bookmark useful solutions for later.
+Comment on solutions and participate in discussions.
+Future Improvements
+Online code execution and testing
+Support for additional programming languages
+Advanced problem filtering
+User profiles and progress tracking
+Competitive programming contests
